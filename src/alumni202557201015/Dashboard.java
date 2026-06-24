@@ -213,6 +213,22 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void bLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLogoutActionPerformed
         // TODO add your handling code here:
+        int pilihan =JOptionPane.showConfirmDialog(
+        null,
+                "Apakah Anda Yakin Ingin Keluar?",
+                "Konfirmasi",
+                JOptionPane.YES_NO_OPTION);
+        
+        switch(pilihan){
+            case JOptionPane.YES_OPTION:
+            dispose();
+            new homee().setVisible(true);
+            break;
+        case JOptionPane.NO_OPTION:
+            break;
+        default:
+            break;
+        }
     }//GEN-LAST:event_bLogoutActionPerformed
 
     /**
